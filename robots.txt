@@ -1,0 +1,16 @@
+# robots.txt for https://thomaslegalconsult.org
+
+# Allow all bots to crawl the site
+User-agent: *
+
+# Disallow crawling of specific files or directories (if needed)
+# Uncomment and modify these lines if you want to block certain pages:
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /wp-admin/  # Example for WordPress sites
+
+# Allow everything else
+Disallow:
+
+# Specify the location of your sitemap
+Sitemap: https://thomaslegalconsult.org/sitemap.txt

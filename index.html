@@ -49,53 +49,87 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	{
-		"@context": "https://schema.org",
-		"@type": "LegalService",
-		"name": "Thomas Legal Consult",
-		"url": "https://thomaslegalconsult.org",
-		"logo": "https://thomaslegalconsult.org/path/to/loder.png",
-		"image": "https://thomaslegalconsult.org/path/to/hero-image.jpg",
-		"description": "Thomas Legal Consult offers expert legal services specializing in corporate, civil, and criminal law with a commitment to providing personalized legal advice and solutions.",
-		"telephone": "+1-613-490-55096",
-		"email": "info@thomaslegalconsult.org",
-		"address": {
-		  "@type": "PostalAddress",
-		  "streetAddress": "595 Bay Street",
-		  "addressLocality": "Toronto",
-		  "addressRegion": "ON",
-		  "postalCode": "Suite 1102",
-		  "addressCountry": "CA"
-		},
-		"sameAs": [
-		  "https://www.facebook.com/thomaslegalconsult",
-		  "https://twitter.com/thomaslegal",
-		  "https://www.linkedin.com/company/thomaslegalconsult"
-		],
-		"founder": {
-		  "@type": "Person",
-		  "name": "Thomas Kwame"
-		},
-		"department": {
-		  "@type": "LegalService",
-		  "name": "Criminal Law"
-		},
-		"contactPoint": {
-		  "@type": "ContactPoint",
-		  "telephone": "+1-416-123-4567",
-		  "contactType": "Customer Service",
-		  "areaServed": "CA",
-		  "availableLanguage": "English"
-		},
-		"serviceArea": {
-		  "@type": "Place",
-		  "name": "Canada"
-		},
-		"openingHours": "Mo-Fr 09:00-17:00"
-	  }
-	  
-
 	</head>
+
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": ["LegalService", "Organization", "LocalBusiness"],
+		  "name": "Thomas Legal Consult",
+		  "url": "https://thomaslegalconsult.org",
+		  "description": "Professional legal consultancy services in Toronto specializing in corporate law, litigation, and immigration law.",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "595 Bay Street, Suite 1102",
+			"addressLocality": "Toronto",
+			"addressRegion": "ON",
+			"postalCode": "M5G 2C2",
+			"addressCountry": "CA"
+		  },
+		  "telephone": "+1-613-490-5096",
+		  "email": "contact@thomaslegalconsult.org",
+		  "image": "https://thomaslegalconsult.org/images/banner.jpg", <!-- Replace with actual image -->
+		  "priceRange": "$$$",
+		  "sameAs": [
+			"https://linkedin.com/company/thomaslegalconsult",
+			"https://facebook.com/thomaslegalconsult"
+		  ],
+		  "areaServed": ["Toronto", "Ontario", "Canada"],
+		  "openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			"opens": "09:00",
+			"closes": "17:00"
+		  }
+		}
+		</script>
+		<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "WebSite",
+			  "name": "Thomas Legal Consult",
+			  "url": "https://thomaslegalconsult.org",
+			  "potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://thomaslegalconsult.org/search?q={search_term}",
+				"query-input": "required name=search_term"
+			  }
+			}
+			</script>
+			<script type="application/ld+json">
+				{
+				  "@context": "https://schema.org",
+				  "@type": "BreadcrumbList",
+				  "itemListElement": [{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://thomaslegalconsult.org"
+				  }, {
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Practice Areas",
+					"item": "https://thomaslegalconsult.org/practice-areas"
+				  }, {
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Won Cases",
+					"item": "https://thomaslegalconsult.org/won-cases"
+				  }, {
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Blog",
+					"item": "https://thomaslegalconsult.org/blog"
+				  }, {
+					"@type": "ListItem",
+					"position": 5,
+					"name": "About Us",
+					"item": "https://thomaslegalconsult.org/about"
+				  }]
+				}
+				</script>
+
+				
 	<body>
 		
 	<div class="fh5co-loader"></div>
@@ -126,6 +160,44 @@
 							<li><a href="contact.html">Contact</a></li>
 							<!--<li class="btn-cta"><a href="#"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>-->
+							<!-- SiteNavigationElement Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  "name": "Main Navigation",
+  "description": "Primary navigation menu for Thomas Legal Consult",
+  "mainEntity": [
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Home",
+      "url": "https://thomaslegalconsult.org"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Practice Areas",
+      "url": "https://thomaslegalconsult.org/practice-areas"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Won Cases",
+      "url": "https://thomaslegalconsult.org/won-cases"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Blog",
+      "url": "https://thomaslegalconsult.org/blog"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "About Us",
+      "url": "https://thomaslegalconsult.org/about"
+    }
+  ]
+}
+</script>
+
+							
 						</ul>
 					</div>
 				</div>
